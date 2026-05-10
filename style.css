@@ -10,14 +10,6 @@ h1 {
     color: #333333;
 }
 
-.titre-centre {
-    text-align: center;
-}
-
-.titre-gauche {
-    text-align: left;
-}
-
 section {
   background-color: #ffffff;
   padding: 20px;
