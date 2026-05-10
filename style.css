@@ -2,7 +2,7 @@ body {
   background-color: #eef4f8;
 
   font-family: Arial, sans-serif;
-  color: #000000;
+  color: #333333;
   margin: 0;
   padding: 10px;
 }
@@ -15,18 +15,31 @@ section {
   padding: 20px;
   margin: auto;
   max-width: 1200px;
-  border-radius: 100px;
+  border-radius: 50px;
 }
 /* Pour modifier la bar de navigation*/
 nav {
-  background-color: rgba(43, 43, 43, 0.747);
+  background-color: rgba(118, 124, 124, 0.747);
   padding: 30px;
   margin: 10px auto;
-  border-radius: 100px;
+  border-radius: 50px;
 
 }
+/*pour styliser les éléments de la bar de navigation*/
 nav ul {
   list-style-type: none;
   display: flex;
   gap: 50px;
+  justify-content: center;
+  padding: 0;
+}
+/*pour styliser les lien de la bar de navigation*/
+nav a {
+  color: #ffffff;
+  background-color: #2b60a5;
+ border: 2px solid #2b60a5;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 8px;
 }
