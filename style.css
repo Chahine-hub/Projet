@@ -21,13 +21,13 @@ h1 {
 section {
   background-color: #ffffff;
   padding: 20px;
-  margin: 20px auto;
+  margin: auto;
   max-width: 1200px;
   border-radius: 100px;
 }
-/* Style pour la bar de navigation*/
+/* Pour modifier la bar de navigation*/
 nav {
-  background-color: rgb(179, 240, 255);
+  background-color: rgba(43, 43, 43, 0.747);
   padding: 30px;
   margin: 10px auto;
   border-radius: 100px;
