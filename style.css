@@ -43,3 +43,19 @@ nav a {
   display: inline-block;
   border-radius: 8px;
 }
+/*pour placer l'image à gauche et le texte à droite*/
+.bloc-image-texte {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.bloc-image-texte img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.texte {
+  max-width: 600px;
+}
