@@ -46,16 +46,18 @@ nav a {
 /*pour placer l'image à gauche et le texte à droite*/
 .bloc-image-texte {
   display: flex;
-  align-items: center;
-  gap: 20px;
+  align-items: flex-start;
+  gap: 40px;
+ 
 }
 
 .bloc-image-texte img {
-  width: 250px;
+  width: 180px;
   height: auto;
-  border-radius: 10px;
+  border-radius: 12px;
+  flex-shrink: 0;
 }
 
 .texte {
-  max-width: 600px;
+  flex: 1;
 }
