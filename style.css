@@ -48,7 +48,9 @@ nav a {
 .bloc-image-texte {
   display: flex;
   align-items: flex-start;
-  gap: 40px;
+  gap: 20px;
+  padding: 0;
+
  
 }
 
@@ -56,12 +58,21 @@ nav a {
   width: 180px;
   height: auto;
   border-radius: 12px;
+  margin: 0;
   flex-shrink: 0;
 }
-
 .texte {
   flex: 1;
+  margin-top: 0; 
 }
+.schema-centre img {
+
+  width: auto;
+  height: auto;
+  align-self: center;
+
+}
+
 footer {
   background-color: rgba(118, 124, 124, 0.747);
   padding: 30px;
