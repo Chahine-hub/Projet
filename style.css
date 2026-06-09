@@ -72,6 +72,25 @@ nav a {
   align-self: center;
 
 }
+ 
+.boite-phishing img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-top: 15px;
+}
+.boite-images-phishing img {
+  flex: 1;
+  min-width: 300px; /* Largeur minimum avant de passer l'une sous l'autre */
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+.legende {
+  font-style: italic;
+  color: #555555;
+  margin-bottom: 30px; 
+}
 
 footer {
   background-color: rgba(118, 124, 124, 0.747);
