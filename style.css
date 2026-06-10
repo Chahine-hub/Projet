@@ -81,7 +81,7 @@ nav a {
 }
 .boite-images-phishing img {
   flex: 1;
-  min-width: 300px; /* Largeur minimum avant de passer l'une sous l'autre */
+  min-width: 300px;
   max-width: 100%;
   height: auto;
   border-radius: 12px;
