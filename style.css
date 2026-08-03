@@ -65,12 +65,9 @@ nav a {
   flex: 1;
   margin-top: 0; 
 }
-.schema-centre img {
-
-  width: auto;
-  height: auto;
-  align-self: center;
-
+.schema-centre {
+  text-align: center;
+  margin: 20px 0;
 }
  
 .boite-phishing img {
