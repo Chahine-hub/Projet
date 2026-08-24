@@ -21,6 +21,66 @@
 </nav>
 <section>
     <h1> Sécurité des accès </h1>
-    <h2> Qu'est-ce que la sécurité des accès ? </h2>
+    <h2>Introduction </h2>
+    <p>Nous allons traiter le thème de la sécurité des accès. C’est-à-dire que nous allons
+         passer en revue les différents moyens qui sont à notre disposition pour protéger l’accès
+          de nos compte ainsi qu’à nos appareils, et surtout comprendre comment les utiliser correctement.</p>
+    <h2>L’authentification</h2>
+    <p>Premièrement nous allons nous pencher sur l’authentification. Cela regroupe tous les moyens qui vous permettent de vérifier votre identité 
+        sur vos appareils ou sur vos comptes. Cette étape est essentielle afin d’éviter que n’importe qui puisse accéder à vos appareils ou à vos 
+        compte, et de vous nuire en collant vos données ou en se faisant passer pour vous.</p>
+        <p>Le principe est toujours le même : pour protéger l’accès à un compte, il vous faudra généralement deux choses, un nom d’utilisateur et
+             un moyen d’authentification. Ici, nous allons découvrir les différents moyens d’authentification populaires de nos jours ainsi que leurs
+              avantages.</p>
+    <p>Il y a plusieurs moyens d’authentifications que vous connaissez surement :</p>
+    <ul>
+        <li><strong>Les mot de passe :</strong></li> <p>Probablement le plus commun, tout le monde en possède et il est utilisé par un large éventail 
+            d’applications et de personnes. Mais il y a un problème : c’est qu'il est très compliqué pour une personne lambda de retenir plusieurs 
+            mots de passe pour plusieurs comptes. C’est pourquoi beaucoup utilisent soit des mots de passe très basiques, donc qui sont fragiles, ou 
+            alors ils réutilisent le même partout, ce qui centralise beaucoup trop l’accès à leurs comptes.</P>
+        <li><strong>Les gestionnaires de mots de passe :</strong></li> <p>Les gestionnaires de mots de passe sont des coffres-forts qui vont à la fois créer
+            des mots de passe longs et compliqués à déchiffrer pour les hackers, et en stocker autant que nécessaire pour chaque site ou compte que vous
+             utiliserez. C'est une solution idéale, car avec ceci nous avons la possibilité d'utiliser plusieurs mots de passe compliqués différents, le 
+             tout sans avoir à se soucier de s'en souvenir, car l’utilisateur aura accès à tous ses mots de passe via un mot de passe unique ou même une
+             authentification biométrique.</p>
+        <li><strong>Authentification biométrique :</strong></li> <p>L’authentification biométrique est une méthode qui devient de plus en plus populaire et utilisée.
+             Elle consiste à exploiter des caractéristiques physiques propres à chaque individu, par exemple son visage ou ses empreintes digitales, pour 
+             déverrouiller un appareil ou certaines applications. Cette méthode nécessite un matériel doté de capteurs adaptés, comme une caméra infrarouge
+              pour éviter qu'une simple photo ne puisse déverrouiller l’appareil, ou encore des capteurs d'empreintes placés sous l’écran ou sur le bouton 
+              d’alimentation.</p>
+        <li><strong>Mot de passe à usage unique et notifications push :</strong></li> <p>Voilà deux moyens d’authentification vraiment similaires, souvent combinés,
+             qui deviennent de plus en plus populaires. Ils ont un fonctionnement assez similaire, pour certaines applications ou services ils vous donnent 
+             la possibilité d’utiliser votre mot de passe ou bien ils peuvent également vous envoyer un mot de passe unique sur votre téléphone ou une notification
+              afin de confirmer votre identité. Ces deux méthodes sont très pratiques car elles peuvent facilement se combiner avec d’autres méthodes et elles
+               demandent très peu d’efforts pour l’utilisateur</p>
+        <li><strong>Les clé d’accès :</strong></li> <p>Les clés d’accès permettent à un utilisateur de se faciliter la vie en octroyant la possibilité d’utiliser l’identification
+             biométrique présentée précédemment avec un système qui va créer une « serrure » pour vous permettre de vous connecter à différents comptes et va utiliser
+              vos empreintes ou votre visage pour débloquer la clé cryptée qui va vous permettre de déverrouiller la serrure et vous connecter en toute sécurité.</p>
+        <li><strong>L’authentification multi facteur :</strong></li> <p> Ce type d’authentification est de loin le plus sécurisé et il est souvent obligatoire lorsqu’il s’agit 
+        de données précieuses ou confidentielles. Son fonctionnement est assez simple, il consiste simplement à combiner certains des moyens d’authentification vus précédemment.
+         La règle consiste à ce que pour accéder à l’appareil ou aux données souhaitées, il vous faudra trois choses : premièrement une information que vous connaissez (ex. : mot de passe, PIN, etc.),
+          deuxièmement quelque chose que vous possédez (ex. : un téléphone, une carte d’accès, etc.) et finalement une authentification biométrique (ex. : empreinte ou visage).</p>
+    <h2>La protection des mots de passe côté serveur</h2>
+    <p>Ici, nous allons brièvement aborder la façon dont les hébergeurs qui vont stocker nos mots de passe s’y prennent pour faire en sorte que les mots de passe ne puissent pas être volés directement depuis la base de données. </p>
+    <p>Nous allons faire le tour de deux méthodes, c’est-à-dire le hachage et le salage. Avant de nous concentrer sur ce que le hachage et le salage font, il faut d’abord comprendre 
+        comment les mots de passe sont stockés chez les hébergeurs. Ce qu’il y a à savoir, c’est que pour stocker vos mots de passe, on ne peut pas simplement les stocker tels quels
+         dans une base de données, car cela signifierait que si la base de données fuite, tous les mots de passe seront dévoilés. Pour régler cela, on pourrait penser à simplement chiffrer
+          les mots de passe avec une clé de chiffrement (une valeur secrète utilisée pour chiffrer et déchiffrer une suite de caractères), mais encore une fois, il y a le risque que si un hacker
+           réussit à récupérer cette clé, il pourra déchiffrer tous les mots de passe. Pour régler ces soucis il y a deux solutions : </p>
+    <ul>
+        <li><strong>Le hachage :</strong></li> <p>Le hachage est une façon de transformer votre mot de passe en une suite de lettres et de chiffres de longueur définie (souvent 64 caractères).
+             Pour arriver à cela, votre mot de passe va passer au travers d’une longue série de calculs compliqués pour à la fin recracher une suite de lettres et de numéros qui, elle, sera stockée
+              et pourra confirmer votre authentification. Cette méthode a trois avantages clairs : premièrement, elle est irréversible, donc il est impossible de faire le chemin arrière pour trouver le mot de passe, deuxièmement,
+               le calcul est déterministe (le même mot donne toujours exactement le même résultat haché), et troisièmement, il est imprévisible, ce qui signifie que c’est impossible de deviner
+                ce que sera la version hachée, autrement cela signifierait que l’algorithme est devenu obsolète.</p>
+        <li><strong>Le salage :</strong></li> <p>Le salage est une amélioration du hachage. En effet, bien que le hachage soit mathématiquement imprévisible, les hackers ont accès à une longue liste contenant
+             la version hachée des mots de passe les plus courants, un peu comme pour les attaques par force brute, ce qui leur donne la possibilité de reconnaître les mots de passe les plus courants. C’est 
+             là que le salage intervient : le concept est simple, chaque utilisateur se voit attribuer ce qu’on appelle un sel (qui est une suite de caractères aléatoires) différent, et il va venir se placer 
+             après le mot de passe pour rendre la version hachée introuvable dans ces fameuses listes.</p>
     
 </section>
+<footer>
+        <p>© 2026 - Projet de prévention en cybersécurité</p>
+</footer>
+</body>
+</html>
