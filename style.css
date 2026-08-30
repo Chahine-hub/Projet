@@ -34,6 +34,7 @@ nav ul {
   justify-content: center;
   padding: 0;
 }
+
 /*pour styliser les lien de la bar de navigation*/
 nav a {
   color: #ffffff;
@@ -43,6 +44,11 @@ nav a {
   text-decoration: none;
   display: inline-block;
   border-radius: 8px;
+}
+nav a:hover {
+  background-color: #3700ff;
+  color: #fff;
+  border: 2px solid #3700ff;
 }
 /*pour placer l'image à gauche et le texte à droite*/
 .bloc-image-texte {
