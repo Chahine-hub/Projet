@@ -1,0 +1,17 @@
+* {
+    margin : 0;
+    padding : 0;
+    font-family : Arial, sans-serif;
+    box-sizing : border-box;
+}
+body {
+    background-color : #eef4f8;
+ }
+ .app{
+    background-color : #fff;
+    width : 90%;
+    max-width : 600px;
+    Margin : 100px auto;
+    border-radius : 10px;
+    padding : 30px;
+ }
