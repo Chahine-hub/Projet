@@ -14,4 +14,9 @@ body {
     margin : 100px auto;
     border-radius : 10px;
     padding : 30px;
+ }
+ .app h1{
+    text-align : center;
+    color : #333;
+    margin-bottom : 20px;
  }        
