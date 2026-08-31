@@ -52,3 +52,20 @@ body {
     background-color : #2e343b;
     color : #fff;
  }
+ #next-btn {
+   background-color : #2b60a5;
+   color : #fff;
+   font-weight : 600;
+   width: 150px ;
+   border : none;
+   padding : 10px;
+   margin : 20px auto;
+   border-radius : 5px;
+   cursor : pointer;
+   display : none;
+ }
+ #next-btn:hover {
+    background-color : #3700ff;
+    color : #fff;
+    border : 1px solid #3700ff;
+ }
