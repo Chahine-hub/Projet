@@ -46,17 +46,24 @@ section {
     border-radius: 50px;
 }
 .btn {
-    width: 150px;
+    width: 250px;
     padding: 14px 40px;
-    front-size: 20px;
+    font-size: 20px;
     font-weight: 600;
     border-radius : 8px;
     display: inline-block; /* pour appliquer les marges et le padding sur le bouton */
-    margin-top: 50px;
     text-decoration: none; /* pour enlever le soulignement du lien */
     color: #fff;
-    texte-align: center; 
+    text-align: center; 
 }
+.menu_bouttons {
+    display: flex;
+   flex-direction: column; /* pour empiler les boutons verticalement */
+    align-items: center; /* pour centrer les boutons horizontalement */
+    gap:30px;
+    margin-top: 50px;
+}
+/* Style pour tout les bouton */
 .btn-phishing{
     Background-color: #22eb7d;
 }
@@ -64,4 +71,28 @@ section {
     Background-color: #ffffff;
     color: #22eb7d;
     border: 2px solid #22eb7d;
+}
+.btn-malware{
+    Background-color: #ffb71d;
+}
+.btn-malware:hover{
+    Background-color: #ffffff;
+    color: #ffb71d;
+    border: 2px solid #ffb71d;
+}
+.btn-securite{
+    Background-color: #a517f7;
+}
+.btn-securite:hover{
+    Background-color: #ffffff;
+    color: #a517f7;
+    border: 2px solid #a517f7;
+}
+.btn-injection{
+    Background-color: #f34d4d;
+}
+.btn-injection:hover{
+    Background-color: #ffffff;
+    color: #f34d4d;
+    border: 2px solid #f34d4d;
 }

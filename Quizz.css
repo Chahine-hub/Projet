@@ -10,7 +10,7 @@ nav {
 }
 
 
-/* Styliser et changer les couleurs pour le thème du quizz Phishing */
+/* Styliser et changer les couleurs pour les différents quizz */
 body.phishing {
     background-color : #22eb7d;
  }
@@ -30,31 +30,64 @@ body.phishing nav a:hover {
     border : 1px solid #099448;
     color : #fff;
  }
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+
+body.malware {
+    background-color : #ffb71d;
+ }
+body.malware nav a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #e68a00;
+    padding: 10px 15px;
+    border-radius: 8px;
+ }
+body.malware nav a:hover {
+    background-color: #b36b00;
+    color: #fff;
+ }
+body.malware .btn:hover:not([disabled]) {
+    background-color : #b36b00;
+    border : 1px solid #b36b00;
+    color : #fff;
+ }
+body.securite {
+    background-color : #a517f7;
+ }
+body.securite nav a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #7a0ab5;
+    padding: 10px 15px;
+    border-radius: 8px;
+ }
+body.securite nav a:hover {
+    background-color: #4d0073;
+    color: #fff;
+ }
+body.securite .btn:hover:not([disabled]) {
+    background-color : #4d0073;
+    border : 1px solid #4d0073;
+    color : #fff;
+ }
+body.injection {
+    background-color : #f34d4d;
+ }
+body.injection nav a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #b30000;
+    padding: 10px 15px;
+    border-radius: 8px;
+ }
+body.injection nav a:hover {
+    background-color: #800000;
+    color: #fff;
+ }
+ body.injection .btn:hover:not([disabled]) {
+    background-color : #800000;
+    border : 1px solid #800000;
+    color : #fff;
+ }
  .app{
     background-color : #ffffff;
     width : 90%;
