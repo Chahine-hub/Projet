@@ -1,0 +1,67 @@
+
+body {
+  background-color: #eef4f8;
+  font-family: Arial, sans-serif;
+  color: #333333;
+  margin: 0;
+  padding: 10px;
+ 
+}
+h1 {
+    color: #333333;
+}
+nav {
+  background-color: rgba(118, 124, 124, 0.747);
+  padding: 30px;
+  margin: 10px auto;
+  border-radius: 50px;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  padding: 0;
+}
+nav a {
+  color: #ffffff;
+  background-color: #2b60a5;
+ border: 2px solid #2b60a5;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 8px;
+}
+nav a:hover {
+  background-color: #3700ff;
+  color: #fff;
+  border: 2px solid #3700ff;
+}
+section {
+    background-color: #ffffff;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    border-radius: 50px;
+}
+.btn {
+    width: 150px;
+    padding: 14px 40px;
+    front-size: 20px;
+    font-weight: 600;
+    border-radius : 8px;
+    display: inline-block; /* pour appliquer les marges et le padding sur le bouton */
+    margin-top: 50px;
+    text-decoration: none; /* pour enlever le soulignement du lien */
+    color: #fff;
+    texte-align: center; 
+}
+.btn-phishing{
+    Background-color: #22eb7d;
+}
+.btn-phishing:hover{
+    Background-color: #ffffff;
+    color: #22eb7d;
+    border: 2px solid #22eb7d;
+}

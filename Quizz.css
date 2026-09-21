@@ -3,13 +3,62 @@
     font-family : Arial, sans-serif;
     box-sizing : border-box;
 }
-body {
-    background-color : #eef4f8;
+nav {
+    display: flex;
+    justify-content: flex-end; /* Aligne le contenu tout à droite */
+    padding: 20px 25px ;
+}
+
+
+/* Styliser et changer les couleurs pour le thème du quizz Phishing */
+body.phishing {
+    background-color : #22eb7d;
  }
+ body.phishing nav a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #1d9723;
+    padding: 10px 15px;
+    border-radius: 8px;
+ }
+body.phishing nav a:hover {
+    background-color: #135f17;
+    color: #fff;
+ }
+ body.phishing .btn:hover:not([disabled]) {
+    background-color : #099448;
+    border : 1px solid #099448;
+    color : #fff;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  .app{
-    background-color : #fff;
+    background-color : #ffffff;
     width : 90%;
-    max-width : 600px;
+    max-width : 1200px;
     margin : 100px auto;
     border-radius : 10px;
     padding : 30px;
@@ -31,6 +80,7 @@ body {
     color : #333;
     font-size : 20px;
     font-weight : 20px;
+    margin-bottom : 20px;
 
     
  }
@@ -47,10 +97,7 @@ body {
     border-radius : 5px;
     transition : all 0.3s ease;
     
- }
- .btn:hover:not([disabled]) {
-    background-color : #2e343b;
-    color : #fff;
+
  }
  .btn[disabled] {
     cursor : no-drop;
